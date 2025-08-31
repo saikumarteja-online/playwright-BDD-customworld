@@ -1,0 +1,126 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orders;user-placing-slsu-order",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User placing SLSU order",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 480604199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "user launch the application",
+            "match": {
+              "location": "Feature\\steps\\Homepage\\Homepage.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11348721499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user naviagate to PLP page",
+            "match": {
+              "location": "Feature\\steps\\PLPpage\\Plp.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3730570000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user navigate to PDP page",
+            "match": {
+              "location": "Feature\\steps\\PDPpge\\Pdp.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user add product to cart",
+            "match": {
+              "location": "Feature\\steps\\PDPpge\\Pdp.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 436699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user navigate to cart page",
+            "match": {
+              "location": "Feature\\steps\\Cart\\Cart.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 493000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user proceed to checkout",
+            "match": {
+              "location": "Feature\\steps\\Checkout\\Checkout.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 224599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1972000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "orders",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Orders",
+    "tags": [],
+    "uri": "Feature\\Features\\login.feature"
+  }
+]
