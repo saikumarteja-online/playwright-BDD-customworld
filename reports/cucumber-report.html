@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Cucumber Feature Report</title>
-  <link rel="icon" href="https://www.lambdatest.com/favicon.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <style type="text/css">
-    .panel-heading {
+  <head>
+    <title>Cucumber Feature Report</title>
+    <link rel="icon" href="https://www.lambdatest.com/favicon.ico" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style type="text/css">
+      .panel-heading {
     padding: 0;
 }
 
@@ -261,10 +260,6 @@ pre {
     color: #616161;
 }
 
-.stepname {
-    word-wrap: break-word;
-}
-
 .feature-passed {
     display: block;
 }
@@ -289,181 +284,119 @@ pre {
     min-width: 100%;
 }
 
-.ellipsis {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all .2s linear;
-    white-space: nowrap;
-    padding:.5rem 1rem;
-}
-.ellipsis:focus, .ellipsis:hover {
-  color:transparent;
-}
-.ellipsis:focus:after,.ellipsis:hover:after{
-    content:attr(data-text);
-    overflow: visible;
-    text-overflow: inherit;
-    background: #fff;
-    position: absolute;
-    left:auto;
-    top:auto;
-    width: auto;
-    max-width: 100%;
-    border: 1px solid #eaebec;
-    padding: 0 .5rem;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.28);
-    white-space: normal;
-    word-wrap: break-word;
-    display:block;
-    color:black;
-    margin-top:-1.25rem;
-    z-index: 1;
-  }
 
-    /** Issue in google-charts tooltip - https://github.com/google/google-visualization-issues/issues/2162 */
-    .google-visualization-tooltip {
-      pointer-events: none;
-    }
-
-    .count-wrapper {
-      display: flex;
-      gap: 15px;
-    }
-
-    .card {
-      border: 1px solid #f5f5f5;
-      padding: 15px;
-      color: #fff;
-      border-radius: 5px;
-      flex: 1;
-    }
-
-    .generated-on {
-      margin-right: 10px;
-    }
-
-    .card h4 {
-      font-size: 15px;
-    }
-
-    .red-box {
-      background: #d9534e;
-    }
-
-    .blue-box {
-      background: #0074ff;
-    }
-
-    .yellow-box {
-      background: #f0ad4e;
-    }
-
-    .saffron-box {
-      background: #ff9933;
-    }
-
-    .green-box {
-      background: #5cb85b;
-    }
-
-    .gray-box {
-      background: #999;
-    }
-
-    .amb-box {
-      background: #218bcf;
-    }
-
-    .undefined-box {
-      background: #22c2e2;
-    }
-
-    .mb-20px {
-      margin-bottom: 20px;
-    }
-  </style>
-  <meta charset="UTF-8">
-</head>
-
-<body>
-
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        
-          <a class="navbar-brand">
-            Cucumberjs Report
-          </a>
-          <div class="project-name visible-md visible-lg">
-            playwright-cucumber-ts
-          </div>
-          <div class="label-container">
-            <div class="generated-on">
-              Sun Aug 31 2025 18:43:38 GMT+0530 (India Standard Time)
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="count-wrapper mb-20px">
-      <div class="card blue-box">
-        <div class="feature-title">
-          <h4>All Scenarios</h2>
-        </div>
-        <div class="feature-value">
-          <h5>
-            1
-          </h5>
-        </div>
-      </div>
-      <div class="card green-box">
-        <div class="feature-title">
-          <h4>Passed Scenarios</h2>
-        </div>
-        <div class="feature-value">
-          <h5>
-            1
-          </h5>
-        </div>
-      </div>
-      <div class="card red-box">
-        <div class="feature-title">
-          <h4>Failed Scenarios</h2>
-        </div>
-        <div class="feature-value">
-          <h5>
-            0
-          </h5>
-        </div>
-      </div>
+/** Issue in google-charts tooltip - https://github.com/google/google-visualization-issues/issues/2162 */
+.google-visualization-tooltip { pointer-events:none; }
       
-          
-              
-                  
-                      
-    </div>
-    <div class="row">
-      <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
-      <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+.count-wrapper{
+  display: flex;
+  gap: 15px;
+}
+.card{
+  border: 1px solid #f5f5f5;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  flex: 1;
+}
+.generated-on{
+  margin-right: 10px;
+}
+.card h4{
+  font-size: 15px;
+}
+.red-box{
+  background: #d9534e;
+}
+.blue-box{
+  background: #0074ff;
+}
+.yellow-box{
+  background: #f0ad4e;
+}
+.saffron-box{
+  background: #ff9933;
+}
+.green-box{
+  background: #5cb85b;
+}
+.gray-box{
+  background: #999;
+}
+.amb-box{
+  background: #218bcf;
+}
+.undefined-box{
+  background: #22c2e2;
+}
+.mb-20px{
+  margin-bottom: 20px;
+}
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        
+          <a class="navbar-brand">Cucumberjs Report</a>
+          <div class="project-name visible-md visible-lg">playwright-cucumber-ts</div>
+          <div class="label-container">
+                <div class="generated-on">
+                  Mon Sep 01 2025 07:56:20 GMT+0530 (India Standard Time)
+                </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <p class="text-left">
-        Execution Time: 12ms
-      </p>
-      <p class="text-right">
-        <a id="expand_all">Expand All</a>
-        <span> | </span>
-        <a id="collapse_all">Collapse All</a>
-      </p>
-    </div>
+    <div class="container">
 
-    
+      <div class="count-wrapper mb-20px">
+        <div class="card blue-box">
+          <div class="feature-title">
+            <h4>All Scenarios</h2>
+          </div>
+          <div class="feature-value">
+            <h5>
+              1
+            </h5>
+          </div>
+        </div>
+        <div class="card green-box">
+          <div class="feature-title">
+            <h4>Passed Scenarios</h2>
+          </div>
+          <div class="feature-value">
+            <h5>
+              1
+            </h5>
+          </div>
+        </div>
+        <div class="card red-box">
+          <div class="feature-title">
+            <h4>Failed Scenarios</h2>
+          </div>
+          <div class="feature-value">
+            <h5>
+              0
+            </h5>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+      </div>
+      <div class="row">
+        <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+        <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+      </div>
+
+      
       <div class="panel panel-default">
         <div class="panel-heading open">
           <h4 class="panel-title">
@@ -478,69 +411,54 @@ pre {
           <div class="panel-body">
             <div class="row">
               
-                
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-left>
-                          <strong>
-                            App Version:
-                          </strong>
-                          1.0
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-right-lg>
-                          <strong>
-                            Test Environment:
-                          </strong>
-                          STAGING
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-left>
-                          <strong>
-                            Browser:
-                          </strong>
-                          Chrome
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-right-lg>
-                          <strong>
-                            Platform:
-                          </strong>
-                          Windows 11
-                        </div>
-                      </div>
-                      
-                  
-                    
-                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class=pull-left>
-                          <strong>
-                            Executed:
-                          </strong>
-                          Local
-                        </div>
-                      </div>
-                      
+             
+              
+              
+              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class=pull-left>
+                    <strong> App Version: </strong>1.0
+                  </div>
+              </div>
+              
+              
+              
+              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class=pull-right-lg>
+                    <strong> Test Environment: </strong>STAGING
+                  </div>
+              </div>
+              
+              
+              
+              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class=pull-left>
+                    <strong> Browser: </strong>Chrome
+                  </div>
+              </div>
+              
+              
+              
+              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class=pull-right-lg>
+                    <strong> Platform: </strong>Windows 11
+                  </div>
+              </div>
+              
+              
+              
+              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class=pull-left>
+                    <strong> Executed: </strong>Local
+                  </div>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
       
 
-        
+      
 
 
 <div class="row" xmlns="http://www.w3.org/1999/html">
@@ -556,16 +474,11 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumber_ts4be632af-4207-4612-811d-501eb88d8654">
+                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumber_ts7cf1e26d-7abb-42f9-8ea6-542812e995a6">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Orders
                         <span class="label-container">
-
-                        
-
-                        <span>12ms</span>
-                                
               <span class="label label-success"
                                                          title="1 Scenarios Passed">1</span>
               
@@ -577,7 +490,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeatureplaywright_cucumber_ts4be632af-4207-4612-811d-501eb88d8654" class="panel-collapse collapse">
+            <div id="collapseFeatureplaywright_cucumber_ts7cf1e26d-7abb-42f9-8ea6-542812e995a6" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -590,17 +503,16 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumber_ts5b787957-2785-4716-868f-9158c4090668">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumber_ts90c0c626-912b-4567-be79-2fb39bbba580">
                                     <div>
 
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b><div class="ellipsis" data-text="User placing SLSU order">User placing SLSU order</div>
+                                            <b>Scenario:</b>User placing SLSU order
                                         </div>
                                         <div>
                             <span class="label-container ">
-                                <span>12ms</span>
                               
                               <span class="label label-success"
                                                                title="6 Steps Passed">6</span>
@@ -616,7 +528,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywright_cucumber_ts5b787957-2785-4716-868f-9158c4090668"
+                        <div id="collapseScenarioplaywright_cucumber_ts90c0c626-912b-4567-be79-2fb39bbba580"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -635,11 +547,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span class="stepname"> user launch the application</span>
+                          <span> user launch the application</span>
                             
                           
                               <span class="step-duration">
-                               10ms
+                               22s 180ms
                               </span>
                             
                          
@@ -673,7 +585,83 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span class="stepname"> user naviagate to PLP page</span>
+                          <span> user naviagate to PLP page</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 245ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> user navigate to PDP page</span>
+                            
+                          
+                              <span class="step-duration">
+                               1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> user add product to cart</span>
                             
                           
                               <span class="step-duration">
@@ -711,7 +699,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span class="stepname"> user navigate to PDP page</span>
+                          <span> user navigate to cart page</span>
                             
                           
                               <span class="step-duration">
@@ -749,83 +737,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span class="stepname"> user add product to cart</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span class="stepname"> user navigate to cart page</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span class="stepname"> user proceed to checkout</span>
+                          <span> user proceed to checkout</span>
                             
                           
                               <span class="step-duration">
@@ -871,46 +783,38 @@ pre {
 
 
 
-          
-  </div>
+    </div>
 
 
-
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-    google.load("visualization", "1", { packages: ["corechart"] });
-    google.setOnLoadCallback(function () {
-      drawChart({
-        "title": "Features",
-        "failed": 0,
-        "passed": 1,
-        "notdefined": 0,
-        "pending": 0,
-        "skipped": 0,
-        "ambiguous": 0
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Features",
+                                                            "failed" : 0,
+                                                            "passed" : 1,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 0
                                                         })
-    });
-    google.setOnLoadCallback(function () {
-      drawChart({
-        "title": "Scenarios",
-        "failed": 0,
-        "passed": 1,
-        "rerun": 0,
-        "notdefined": 0,
-        "pending": 0,
-        "skipped": 0,
-        "ambiguous": 0
+                                            });
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Scenarios",
+                                                            "failed" : 0,
+                                                            "passed" : 1,
+                                                            "rerun" : 0,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 0
                                                         })
-    });
-  </script>
-  <script>
+                                            });
+    </script>
+    <script>
       $(document).ready(function () {
   $('.collapse')
     .on('hide.bs.collapse', function (e) {
@@ -927,28 +831,6 @@ pre {
   let timestamp = $generated.text();
   $generated.text('Report generated ' + moment(timestamp).fromNow());
   $generated.prop('title', new Date(timestamp).toISOString());
-});
-
-$(document).ready(function () {
-  const $collapsibleItems = $('[data-toggle="collapse"]');
-  const $collapseAllBtn = $('#collapse_all');
-  const $expandAllBtn = $('#expand_all');
-
-  const collapseAll = function () {
-    $collapsibleItems.each(function () {
-      $($(this).attr('href')).collapse('hide');
-    });
-  };
-
-  const expandAll = function () {
-    $collapsibleItems.each(function () {
-      $($(this).attr('href')).collapse('show');
-    });
-  };
-
-  $collapseAllBtn.on('click', collapseAll);
-  $expandAllBtn.on('click', expandAll);
-
 });
 
 function toggle(className) {
@@ -1037,7 +919,6 @@ function toggle(className) {
   }
 });
 
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

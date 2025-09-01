@@ -3,7 +3,8 @@
         "path":["Feature/Features/*.feature"],
         "require":["Feature/steps/**",
             "Feature/hooks/hooks.ts",
-            "Feature/hooks/world.ts"
+            "Feature/hooks/world.ts",
+            "Feature/TestData/**"
         ],
         "requireModule": ["ts-node/register"],
         "format": [

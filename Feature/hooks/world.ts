@@ -13,9 +13,9 @@ export class CustomWorld extends World {
 
   async init() {
     this.browser = await chromium.launch({
-      headless: false,
-      slowMo: 50,
-      args: ["--start-maximized"],
+      headless: false
+      
+      
     });
     const context = await this.browser.newContext({
       httpCredentials: {

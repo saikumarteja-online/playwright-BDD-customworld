@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 480604199
+              "duration": 866420700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11348721499
+              "duration": 11168479200
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "user naviagate to PLP page",
             "match": {
-              "location": "Feature\\steps\\PLPpage\\Plp.ts:4"
+              "location": "Feature\\steps\\Homepage\\Homepage.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3730570000
+              "duration": 5849416699
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "user navigate to PDP page",
             "match": {
-              "location": "Feature\\steps\\PDPpge\\Pdp.ts:3"
+              "location": "Feature\\steps\\PLPpage\\Plp.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 386099
+              "duration": 3885634500
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 7,
             "name": "user add product to cart",
             "match": {
-              "location": "Feature\\steps\\PDPpge\\Pdp.ts:6"
+              "location": "Feature\\steps\\PDPpge\\Pdp.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 436699
+              "duration": 9775986099
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 8,
             "name": "user navigate to cart page",
             "match": {
-              "location": "Feature\\steps\\Cart\\Cart.ts:3"
+              "location": "Feature\\steps\\PDPpge\\Pdp.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 493000
+              "duration": 2604035900
             }
           },
           {
@@ -88,11 +88,63 @@
             "line": 9,
             "name": "user proceed to checkout",
             "match": {
+              "location": "Feature\\steps\\Cart\\Cart.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user enter shipping details",
+            "match": {
               "location": "Feature\\steps\\Checkout\\Checkout.ts:3"
             },
             "result": {
               "status": "passed",
-              "duration": 341599
+              "duration": 142599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user enter payment details",
+            "match": {
+              "location": "Feature\\steps\\Checkout\\Checkout.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user place the order",
+            "match": {
+              "location": "Feature\\steps\\Checkout\\Checkout.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 582300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user verify order confirmation page",
+            "match": {
+              "location": "Feature\\steps\\orderconfirmation\\orderconfirmation.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173199
             }
           },
           {
@@ -100,7 +152,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 224599
+              "duration": 322899
             }
           },
           {
@@ -108,7 +160,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1972000
+              "duration": 166299
             }
           }
         ],

@@ -1,5 +1,12 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 
-Then("user proceed to checkout", function () {
-  console.log("proceed to checkout");
+Then('user enter shipping details', function () {
+
+});
+
+Then('user enter payment details', function () {
+
+});
+Then('user place the order', function () {
+
 });

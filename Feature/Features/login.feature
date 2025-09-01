@@ -7,5 +7,10 @@ Scenario:User placing SLSU order
     Then user add product to cart
     Then user navigate to cart page
     Then user proceed to checkout
+    Then user enter shipping details
+    Then user enter payment details
+    Then user place the order
+    Then user verify order confirmation page
+    
     
 
